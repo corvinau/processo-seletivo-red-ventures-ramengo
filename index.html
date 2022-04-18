@@ -8,11 +8,74 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./index.scss" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./styles/index.scss" />
   </head>
 
   <body>
-		<img src="images/header/entregadora.svg" alt="RamenGO" />
-		<h1>Um bom teste para você :D</h1>
+    <header>
+      <div class="logo">
+        <img src="images/logo-ramen-go.svg" alt="Logo RamenGO" />
+      </div>
+
+      <div class="header-description">
+        <div class="header-description-name">
+          <span>
+            <img src="images/name/lamen.svg" alt="Ramen" />
+          </span>
+          <span>
+            <img src="images/name/go.svg" alt="GO!" />
+          </span>
+        </div>
+
+        <div class="header-description-phrase">
+          Enjoy a good ramen in the comfort of your house. Create your own ramen and choose your favorite flavour combination!
+        </div>
+
+        <button>Order now</button>
+      </div>
+
+      <div class="header-background">
+        <div class="header-images">
+          <img src="images/header/entregadora.svg" alt="RamenGO" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <form action="https://front-br-challenges.web.app/api/v1/ramen-go/" method="get">
+        <div>
+          <p>First things first: select your favorite broth.</p>
+          <input type="radio" id="salt" name="broth" value="salt">
+          <label for="salt">Salt</label>
+  
+          <input type="radio" id="shoyu" name="broth" value="shoyu">
+          <label for="shoyu">Shoyu</label>
+          
+          <input type="radio" id="miso" name="broth" value="miso">
+          <label for="miso">Miso</label>
+        </div>
+  
+        <div>
+          <p>It’s time to choose (or not) your meat!</p>
+          <input type="radio" id="chasu" name="meat" value="chasu">
+          <label for="chasu">Chasu</label>
+  
+          <input type="radio" id="yasai_vegetarian" name="meat" value="yasai_vegetarian">
+          <label for="yasai_vegetarian">Yasai Vegetarian</label>
+          
+          <input type="radio" id="karaague" name="meat" value="karaague">
+          <label for="karaague">Karaague</label>
+        </div>
+  
+        <div class="button">
+          <button type="submit">Place my order</button>
+        </div>
+      </form>
+    </main>
+
   </body>
 </html>

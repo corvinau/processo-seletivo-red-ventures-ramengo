@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #FAFAED;
+}
+
+header {
+    background: url('../images/header/background-pattern.png') repeat;
+
+    .logo {
+        padding: 15px;
+    }
+
+    .header-description {
+        z-index: 1000;
+        position: absolute;
+        width: 380px;
+        top: 25%;
+        left: 23%;
+
+        .header-description-name {
+            margin-bottom: 10px;
+        }
+
+        .header-description-phrase {
+            font-weight: 500;
+            line-height: 24px;
+            font-size: 16px;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            color: #ffffff;
+            
+            margin-bottom: 10px;
+            width: 200px;
+        }
+    }
+
+    .header-background {
+        display: flex;
+        justify-content: center;
+
+        .header-images {
+            background-image: url('../images/header/balao-azul.svg'),
+                url('../images/header/balao-amarelo.svg'),
+                url('../images/header/background-elipse.svg');
+            background-repeat: no-repeat, no-repeat, no-repeat;
+            background-position: 0% 0%, 100% 50%, 50% 50%;
+        }
+
+        img {
+            margin: 35px 0;
+        }
+    }
+}
