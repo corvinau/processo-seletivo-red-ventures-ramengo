@@ -9,13 +9,18 @@
       rel="stylesheet"
     >
     <link rel="stylesheet" href="./styles/index.scss" />
-    <link rel="stylesheet" href="./styles/header.scss" />
   </head>
 
   <body>
     <header>
       <div class="logo">
         <img src="images/logo-ramen-go.svg" alt="Logo RamenGO" />
+      </div>
+
+      <div class="header-background">
+        <div class="header-images">
+          <img src="images/header/entregadora.svg" alt="RamenGO" />
+        </div>
       </div>
 
       <div class="header-description">
@@ -37,44 +42,118 @@
           <div class="arrow-button">&rarr;</div>
         </a>
       </div>
-
-      <div class="header-background">
-        <div class="header-images">
-          <img src="images/header/entregadora.svg" alt="RamenGO" />
-        </div>
-      </div>
     </header>
 
     <main id="main">
-      <form action="https://front-br-challenges.web.app/api/v1/ramen-go/" method="get">
-        <div>
-          <p>First things first: select your favorite broth.</p>
-          <input type="radio" id="salt" name="broth" value="salt">
-          <label for="salt">Salt</label>
-  
-          <input type="radio" id="shoyu" name="broth" value="shoyu">
-          <label for="shoyu">Shoyu</label>
-          
-          <input type="radio" id="miso" name="broth" value="miso">
-          <label for="miso">Miso</label>
-        </div>
-  
-        <div>
-          <p>It’s time to choose (or not) your meat!</p>
-          <input type="radio" id="chasu" name="meat" value="chasu">
-          <label for="chasu">Chasu</label>
-  
-          <input type="radio" id="yasai_vegetarian" name="meat" value="yasai_vegetarian">
-          <label for="yasai_vegetarian">Yasai Vegetarian</label>
-          
-          <input type="radio" id="karaague" name="meat" value="karaague">
-          <label for="karaague">Karaague</label>
-        </div>
-  
-        <div class="button">
+      <div class="form-order">
+        <form action="https://front-br-challenges.web.app/api/v1/ramen-go/" method="get">
+          <div>
+            <h1>First things first: select your favorite broth.</h1>
+            <p>It will give the whole flavor on your ramen soup. </p>
+
+            <div class="form-options">
+              <input type="radio" id="salt" name="broth" value="salt">
+              <label for="salt">
+                <div class="option-label">
+                  <div class="option-label-icon">
+                    <img src="images/icons/salt/inactive.svg" class="img-inactive" alt="Salt" />
+                    <img src="images/icons/salt/active.svg" class="img-active" alt="Salt" />
+                  </div>
+                  <div class="option-label-name">Salt</div>
+                  <div class="option-label-description">
+                    Simple like the seawater, nothing more.
+                  </div>
+                  <div class="option-label-value">US$ 10</div>
+                </div>
+              </label>
+      
+              <input type="radio" id="shoyu" name="broth" value="shoyu">
+              <label for="shoyu">
+                <div class="option-label">
+                  <div class="option-label-icon">
+                    <img src="images/icons/shoyu/inactive.svg" class="img-inactive" alt="Shoyu" />
+                    <img src="images/icons/shoyu/active.svg" class="img-active" alt="Shoyu" />
+                  </div>
+                  <div class="option-label-name">Shoyu</div>
+                  <div class="option-label-description">
+                    The good old and traditional soy sauce.
+                  </div>
+                  <div class="option-label-value">US$ 10</div>
+                </div>
+              </label>
+              
+              <input type="radio" id="miso" name="broth" value="miso">
+              <label for="miso">
+                <div class="option-label">
+                  <div class="option-label-icon">
+                    <img src="images/icons/miso/inactive.svg" class="img-inactive" alt="Miso" />
+                    <img src="images/icons/miso/active.svg" class="img-active" alt="Miso" />
+                  </div>
+                  <div class="option-label-name">Miso</div>
+                  <div class="option-label-description">
+                    Paste made of fermented soybeans.
+                  </div>
+                  <div class="option-label-value">US$ 12</div>
+                </div>
+              </label>
+            </div>
+          </div>
+    
+          <div>
+            <h1>It’s time to choose (or not) your meat!</h1>
+            <p>Some people love, some don’t. We have options for all tastes.</p>
+
+            <div class="form-options">
+              <input type="radio" id="chasu" name="meat" value="chasu">
+              <label for="chasu">
+                <div class="option-label">
+                  <div class="option-label-icon">
+                    <img src="images/icons/pork/inactive.svg" class="img-inactive" alt="Chasu" />
+                    <img src="images/icons/pork/active.svg" class="img-active" alt="Chasu" />
+                  </div>
+                  <div class="option-label-name">Chasu</div>
+                  <div class="option-label-description">
+                    A sliced flavourful pork meat with a selection of season vegetables.
+                  </div>
+                  <div class="option-label-value">US$ 10</div>
+                </div>
+              </label>
+      
+              <input type="radio" id="yasai_vegetarian" name="meat" value="yasai_vegetarian">
+              <label for="yasai_vegetarian">
+                <div class="option-label">
+                  <div class="option-label-icon">
+                    <img src="images/icons/yasai/inactive.svg" class="img-inactive" alt="Yasai Vegetarian" />
+                    <img src="images/icons/yasai/active.svg" class="img-active" alt="Yasai Vegetarian" />
+                  </div>
+                  <div class="option-label-name">Yasai Vegetarian</div>
+                  <div class="option-label-description">
+                    A delicious vegetarian lamen with a selection of season vegetables.
+                  </div>
+                  <div class="option-label-value">US$ 10</div>
+                </div>
+              </label>
+              
+              <input type="radio" id="karaague" name="meat" value="karaague">
+              <label for="karaague">
+                <div class="option-label">
+                  <div class="option-label-icon">
+                    <img src="images/icons/chicken/inactive.svg" class="img-inactive" alt="Karaague" />
+                    <img src="images/icons/chicken/active.svg" class="img-active" alt="Karaague" />
+                  </div>
+                  <div class="option-label-name">Karaague</div>
+                  <div class="option-label-description">
+                    Three units of fried chicken, moyashi, ajitama egg and other vegetables.
+                  </div>
+                  <div class="option-label-value">US$ 12</div>
+                </div>
+              </label>
+            </div>
+          </div>
+    
           <button type="submit">Place my order</button>
-        </div>
-      </form>
+        </form>
+      </div>
     </main>
 
   </body>
