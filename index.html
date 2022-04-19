@@ -5,14 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
       rel="stylesheet"
     >
     <link rel="stylesheet" href="./styles/index.scss" />
+    <link rel="stylesheet" href="./styles/header.scss" />
   </head>
 
   <body>
@@ -23,19 +20,22 @@
 
       <div class="header-description">
         <div class="header-description-name">
-          <span>
-            <img src="images/name/lamen.svg" alt="Ramen" />
-          </span>
-          <span>
-            <img src="images/name/go.svg" alt="GO!" />
-          </span>
+          <div class="header-description-ramen">
+            ラーメン
+          </div>
+          <div class="header-description-go">
+            GO!
+          </div>
         </div>
 
         <div class="header-description-phrase">
           Enjoy a good ramen in the comfort of your house. Create your own ramen and choose your favorite flavour combination!
         </div>
 
-        <button>Order now</button>
+        <a href="#main" class="button-order">
+          <div>Order now</div>
+          <div class="arrow-button">&rarr;</div>
+        </a>
       </div>
 
       <div class="header-background">
@@ -45,7 +45,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main">
       <form action="https://front-br-challenges.web.app/api/v1/ramen-go/" method="get">
         <div>
           <p>First things first: select your favorite broth.</p>

@@ -1,0 +1,91 @@
+header {
+  height: 805px;
+  background: url('../images/header/background-pattern.png') repeat;
+
+  .logo {
+      padding: 15px;
+  }
+
+  .header-description {
+      position: absolute;
+      top: 25%;
+      left: 24%;
+
+      .header-description-name {
+          display: flex;
+          align-items: flex-end;
+
+          .header-description-ramen {
+              display: flex;
+              flex-direction: column;
+              flex-wrap: nowrap;
+              align-items: center;
+              width: 60px;
+
+              font-size: 48px;
+              font-weight: 900;
+              line-height: 56px;
+              color: #FFC024;
+          }
+
+          .header-description-go {
+              font-size: 160px;
+              font-weight: 900;
+              line-height: 130px;
+              color: #FAFAED;
+          }
+      }
+
+      .header-description-phrase {
+          line-height: 24px;
+          
+          color: #FFFFFF;
+          margin: 10px 0 30px;
+          width: 200px;
+      }
+  }
+
+  .header-background {
+      display: flex;
+      justify-content: center;
+
+      .header-images {
+          background-image: url('../images/header/balao-azul.svg'),
+              url('../images/header/balao-amarelo.svg'),
+              url('../images/header/background-elipse.svg');
+          background-repeat: no-repeat, no-repeat, no-repeat;
+          background-position: 0% 0%, 100% 50%, 50% 50%;
+      }
+
+      img {
+          margin: 35px 0;
+      }
+  }
+
+  .button-order {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+
+      background-color: #1820EF;
+      border-radius: 50px;
+      padding: 20px;
+      width: 200px;
+      border: none;
+
+      cursor: pointer;
+
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #FFFFFF;
+      letter-spacing: 1.78px;
+      line-height: 21px;
+      font-weight: 800;
+
+      .arrow-button {
+          color: #FFC024;
+          font-size: 25px;
+      }
+  }
+}
