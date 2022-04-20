@@ -30,7 +30,7 @@ div#main {
       position: fixed;
       width: 0;
     }
-    
+
     .form-options label {
       display: inline-block;
       padding: 40px 20px;
@@ -42,7 +42,7 @@ div#main {
 
       .option-label {
         width: 320px;
-  
+
         .option-label-icon {
           margin-bottom: 10px;
         }
@@ -56,18 +56,18 @@ div#main {
           font-weight: 900;
           line-height: 24px;
           color: #1820EF;
-  
+
           margin-bottom: 10px;
         }
-  
+
         .option-label-description {
           font-size: 14px;
           line-height: 16px;
           color: #000000;
-  
+
           margin-bottom: 25px;
         }
-  
+
         .option-label-value {
           font-size: 20px;
           font-weight: 900;
@@ -76,7 +76,7 @@ div#main {
         }
       }
     }
-    
+
     .form-options label:hover,
     .form-options input[type="radio"]:checked + label,
     .form-options input[type="radio"]:focus + label {
@@ -94,11 +94,11 @@ div#main {
         .option-label-name {
           color: #FFFFFF;
         }
-  
+
         .option-label-description {
           color: #FFFFFF;
         }
-  
+
         .option-label-value {
           color: #FFC024;
         }
@@ -114,22 +114,22 @@ div#main {
         justify-content: space-between;
         align-items: center;
         align-content: center;
-    
+
         background-color: #C5C5C5;
         border-radius: 50px;
         padding: 20px;
         width: 225px;
         border: none;
-    
+
         cursor: pointer;
-    
+
         text-transform: uppercase;
         text-decoration: none;
         color: #FFFFFF;
         letter-spacing: 1.78px;
         line-height: 21px;
         font-weight: 800;
-    
+
         .arrow-submit {
           color: #FFFFFF;
           font-size: 25px;

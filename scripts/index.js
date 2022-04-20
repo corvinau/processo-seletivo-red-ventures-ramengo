@@ -16,20 +16,19 @@ document.forms['ramenForm'].addEventListener('submit', (event) => {
       return response.json();
     })
     .then((data) => {
-      console.log(data.data);
+      let img = document.createElement('img');
+      img.src = data.data.image;
+      img.alt = data.data.name;
+
+      let span = document.createElement('span');
+      span.innerHTML = `${data.data.name}`;
+
       document.getElementById('header').remove();
       document.getElementById('main').remove();
 
       document.getElementById('result').classList.remove('result');
 
-      let img = document.createElement('img');
-      img.src = data.data.image;
-      img.alt = data.data.name;
-
       document.getElementById('response-image-order').appendChild(img);
-
-      let span = document.createElement('span');
-      span.innerHTML = `${data.data.name}`;
 
       document.getElementById('response-name-order-order').appendChild(span);
     })
