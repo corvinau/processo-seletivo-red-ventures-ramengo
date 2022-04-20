@@ -1,5 +1,6 @@
 @import "header";
 @import "form";
+@import "result";
 
 * {
   margin: 0;
@@ -12,4 +13,8 @@
 
 body {
   background: #FAFAED;
+}
+
+.result {
+  display: none !important;
 }

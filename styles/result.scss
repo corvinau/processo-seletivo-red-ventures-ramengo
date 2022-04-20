@@ -1,0 +1,117 @@
+#result {
+  display: flex;
+
+  .response-order {
+    background: url('../images/pattern-azul.png') repeat;
+    height: 100vh;
+    width: 45%;
+
+    .response-logo {
+      padding: 30px;
+    }
+
+    #response-image-order {
+      display: flex;
+      justify-content: center;
+      margin: 100px 0;
+    }
+
+    .response-name-order {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      #response-name-order-your-order {
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 24px;
+
+        color: #FFFFFF;
+      }
+
+      #response-name-order-order {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 48px;
+
+        color: #FFC024;
+      }
+    }
+  }
+
+  .response-notice {
+    width: 55%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .response-notice-icon {
+      margin-bottom: 15px;
+    }
+
+    .response-notice-japanese-phrase {
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 24px;
+
+      color: #FFC024;
+
+      margin-bottom: 15px;
+    }
+
+    .response-notice-principal-phrase {
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 40px;
+
+      color: #FF4E42;
+
+      margin-bottom: 15px;
+    }
+
+    .response-notice-description-phrase {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+
+      color: #000000;
+
+      margin-bottom: 20px;
+    }
+
+    .response-notice-button {
+      display: flex;
+      justify-content: center;
+
+      button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    
+        background-color: #1820EF;
+        border-radius: 50px;
+        padding: 20px;
+        width: 225px;
+        border: none;
+    
+        cursor: pointer;
+    
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #FFFFFF;
+        letter-spacing: 1.78px;
+        line-height: 21px;
+        font-weight: 800;
+    
+        .arrow-notice {
+          color: #FFC024;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
