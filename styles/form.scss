@@ -138,3 +138,20 @@ div#main {
     }
   }
 }
+
+
+@media (max-width: 780px) {
+  div#main {
+    .form-order {
+      padding: 100px 30px;
+
+      .form-options {
+        flex-direction: column;
+      }
+
+      .form-options label {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

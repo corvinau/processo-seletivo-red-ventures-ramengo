@@ -1,9 +1,10 @@
 header {
   background: url('../images/header/background-pattern.png') repeat;
-  height: 805px;
+  height: 80vh;
 
   .logo {
     padding: 15px;
+    margin-bottom: 40px;
   }
 
   .header-description {
@@ -49,16 +50,20 @@ header {
     display: flex;
     justify-content: center;
 
-    .header-images {
-      background-image: url('../images/header/balao-azul.svg'),
-        url('../images/header/balao-amarelo.svg'),
-        url('../images/header/background-elipse.svg');
-      background-repeat: no-repeat, no-repeat, no-repeat;
-      background-position: 0% 0%, 100% 50%, 50% 50%;
+    .circle {
+      border-radius: 50%;
+      background-color: #730000;
+      width: 600px;
+      height: 600px;
     }
 
     img {
-      margin: 35px 0;
+      margin: -35px 0;
+
+      background-image: url('../images/header/balao-azul.svg'),
+        url('../images/header/balao-amarelo.svg');
+      background-repeat: no-repeat, no-repeat;
+      background-position: 0% 0%, 100% 50%;
     }
   }
 
@@ -86,6 +91,101 @@ header {
     .arrow-button {
       color: #FFC024;
       font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    .header-background {
+      margin-right: 30px;
+
+      .circle {
+        width: 400px !important;
+        height: 400px !important;
+      }
+
+      img {
+        width: 450px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  header {
+    height: auto;
+
+    .logo {
+      text-align: center;
+    }
+
+    .header-description {
+      position: inherit;
+
+      text-align: center;
+      margin-top: 80px;
+
+      .header-description-name {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+  
+        .header-description-ramen {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-items: center;
+          width: auto;
+
+          margin-bottom: 15px;
+        }
+
+        .header-description-go {
+          margin-bottom: 15px;
+        }
+      }
+  
+      .header-description-phrase {
+        margin: 0;
+        padding: 30px 50px 50px;
+        width: auto;
+      }
+    }
+
+    .header-background {
+      .circle {
+        width: 545px;
+        height: 545px;
+      }
+
+      img {
+        width: 590px;
+      }
+    }
+
+    .button-order {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 781px) and (max-width: 999px) {
+  header {
+    .header-description {
+      position: absolute;
+      top: 25%;
+      left: 4%;
+    }
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1350px) {
+  header {
+    .header-description {
+      position: absolute;
+      top: 25%;
+      left: 15%;
     }
   }
 }
