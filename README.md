@@ -1,16 +1,31 @@
-# Basic Test Boilerplate - Ramen GO
-Aqui você encontrará um boilerplate simples, que será disponibilizado para os candidatos do processo de front da Redventures Brasil.
----
+# Sobre o projeto
 
-## Como rodar localmente
+Este projeto foi desenvolvido para o processo seletivo da empresa Red Ventures.
 
-Antes de tudo, você precisa precisará ter o nodejs instalado em sua máquina, após isso basta rodar: 
+## Rodando o projeto localmente
 
-`yarn && yarn start` ou `npm install && npm start`
+Clone o projeto na sua máquina.
 
-## Como gerar a URL de preview
+Depois disso, é preciso instalar os pacotes do projeto.
 
-Para gerar a URL de preview ou "fazer o deploy", basta rodar o comando `yarn deploy` ou `npm deploy`. Esse script irá automaticamente fazer o build e subir os arquivos estáticos para o Surge.sh, como nas imagens abaixo:
+Rode o comando abaixo
 
-![Screen Shot 2021-10-22 at 17 43 58](https://user-images.githubusercontent.com/92953864/138524410-480ed8d8-a567-4ba4-aa51-1b4337ce2ada.png)
-![Screen Shot 2021-10-22 at 17 45 44](https://user-images.githubusercontent.com/92953864/138524435-8724d434-1dac-4664-a5a1-9f7b32556f8c.png)
+```bash
+yarn install
+# ou
+yarn
+```
+
+Com os pacotes instalados basta rodar o comando abaixo para inicializar o projeto:
+
+```bash
+yarn start
+```
+
+Abra [http://localhost:1234](http://localhost:1234) no navegador para ver o resultado.
+
+Depois disso basta testar.
+
+## Acessando o projeto em um servidor
+
+Para visualizar o projeto rodando em um servidor da [`Vercel`](https://vercel.com/), acesse: [teste-dock.vercel.app](https://teste-dock.vercel.app/)
