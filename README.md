@@ -28,4 +28,4 @@ Depois disso basta testar.
 
 ## Acessando o projeto em um servidor
 
-Para visualizar o projeto rodando em um servidor da [`Vercel`](https://vercel.com/), acesse: [teste-dock.vercel.app](https://teste-dock.vercel.app/)
+Para visualizar o projeto rodando em um servidor da Surge, acesse: [teste-ramengo.surge.sh](https://teste-ramengo.surge.sh/)
